@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Efectos de transicion CSS3</title>
+</head>
+
+<body>
+
+
+<h1>Efectos de transición CSS3 </h1>
+<h3>Mas recursos en: <a href="http://www.psdahtmlpasoapaso.com/blog">www.psdahtmlpasoapaso.com/blog</a></h3>
+<p>&nbsp;</p>
+
+<style type="text/css">
+  body {
+	  font-family:Arial;
+  }
+.eldiv { 
+width: 483px; 
+height: 168px; 
+background: #676470; 
+transition: all 0.3s ease; 
+color: #ffffff; 
+text-align: center;
+ padding-top: 130px; 
+ font-size: 2em; 
+ font-weight: bold; 
+ font-family: Arial }
+</style>
+  
+
+<h3>FADE IN</h3>
+<style type="text/css">
+.fade { opacity:0.5; } 
+.fade:hover { opacity:1; }
+</style>
+<div class="eldiv fade" style="cursor: pointer;">FADE IN</div>
+
+<h3>CAMBIO DE COLOR</h3>
+<style type="text/css">
+.color:hover { background:#53a7ea; }
+</style>
+<div class="eldiv color" style="cursor: pointer;">CAMBIO DE COLOR</div>
+
+<h3>AGRANDAR Y ACHICAR</h3>
+<style type="text/css">
+.grow:hover { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
+</style>
+<div class="eldiv grow" style="cursor: pointer;">AGRANDAR</div>
+
+<p>&nbsp;</p>
+<p>
+  <style type="text/css">
+.shrink:hover { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); transform: scale(0.8); }
+  </style>
+</p>
+<div class="eldiv shrink" style="cursor: pointer;">ACHICAR</div>
+
+<h3>ROTAR ELEMENTOS</h3>
+<style type="text/css">
+.rotate:hover { -webkit-transform:rotateZ(-30deg) ; -ms-transform:rotateZ(-30deg) ; transform:rotateZ(-30deg) ; }
+</style>
+<div class="eldiv rotate" style="cursor: pointer;">ROTAR ELEMENTOS</div>
+
+<h3>CAMBIO DE FORMA</h3>
+<style type="text/css">
+.circle:hover { border-radius:50%; }
+</style>
+<div class="eldiv circle" style="cursor: pointer;">CAMBIO DE FORMA</div>
+
+<h3>SOMBRA 3D</h3>
+<style type="text/css">
+.threed:hover { box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea; -webkit-transform: translateX(-5px); transform: translateX(-5px); }
+</style>
+<div class="eldiv threed" style="cursor: pointer;">SOMBRA 3D</div>
+
+<h3>OSCILACION</h3>
+<style type="text/css">-
+@-webkit-keyframes swing { 15% { -webkit-transform: translateX(5px); transform: translateX(5px); } 30% { -webkit-transform: translateX(-5px); transform: translateX(-5px); } 50% { -webkit-transform: translateX(3px); transform: translateX(3px); } 65% { -webkit-transform: translateX(-3px); transform: translateX(-3px); } 80% { -webkit-transform: translateX(2px); transform: translateX(2px); } 100% { -webkit-transform: translateX(0); transform: translateX(0); } } @keyframes swing { 15% { -webkit-transform: translateX(5px); transform: translateX(5px); } 30% { -webkit-transform: translateX(-5px); transform: translateX(-5px); } 50% { -webkit-transform: translateX(3px); transform: translateX(3px); } 65% { -webkit-transform: translateX(-3px); transform: translateX(-3px); } 80% { -webkit-transform: translateX(2px); transform: translateX(2px); } 100% { -webkit-transform: translateX(0); transform: translateX(0); } } .swing:hover { -webkit-animation: swing 1s ease; animation: swing 1s ease; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; }
+</style>
+<div class="eldiv swing" style="cursor: pointer;">OSCILACION</div>
+
+</body>
+</html>
